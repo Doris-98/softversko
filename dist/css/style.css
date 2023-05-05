@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+}
+
+#game,#ispis{
+    margin: 3vh auto;
+    background-color: aqua;
+    height: 70vh;
+    width: 1400px;
+    position: relative;
+    border: 8px darkblue double;
+}
+
+#kocka{
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    top: 320px;
+    left: 1350px;
+}
+
+#tabela{
+    margin: 2px auto;
+    display: flex;
+    width: 1400px;
+    height: 20vh;
+    border: 5px darkblue solid;
+
+}
+.info{
+    text-align: center;
+    flex-grow: 1;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+ }
+
+#ispis{
+    display: none;
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
