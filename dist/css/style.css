@@ -5,7 +5,7 @@ body{
 #game,#ispis{
     margin: 3vh auto;
     background-color: aqua;
-    height: 70vh;
+    height: 500px;
     width: 1400px;
     position: relative;
     border: 8px darkblue double;
@@ -16,8 +16,7 @@ body{
     background-color: black;
     height: 50px;
     width: 50px;
-    top: 320px;
-    left: 1350px;
+   
 }
 
 #tabela{
