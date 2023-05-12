@@ -5,46 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist\css\style.css">
-    <title>Kockica</title>
+    <title>Click chalenge</title>
 </head>
 <body>
-<div id="tabela">
-    <div id="skor" class="info">
-        <p>Skor</p>
+<div id="table">
+    <div class="info">
+        <p>Total Score</p>
         <p id="score">0</p>
     </div>
-
-    <div id="vreme" class="info">
-        <p>Vreme</p>
+    <div  class="info">
+        <p>Level Score</p>
+        <p id="lvlScore"> 0
+        </p>
+    </div>
+    <div class="info" id="time">
         <p id="timer"></p>
     </div>
+    <div  class="info">
+        <p>Level target</p>
+        <p id="target">20</p>
+    </div>
+   
 
-    <div id="level" class="info">
+    <div class="info">
         <p>Level</p>
-        <p>0</p>
+        <p id="level">1</p>
     </div>
 </div>
 
 <div id="game">
-    <div id="kocka" onclick="randomPosiition()">
+    <div id="box" onclick="clickOnBox()">
 
     </div>
 
 </div>
 
-<div id="ispis">
-   <div id="uspesno">
-    <h2>Uspesno ste presli nivo</h2>
-    <button>Next level</button>
+  <div id="start">
+    <h2>Let's get fun!</h2>
+    <h2>Try to click on darkblue box !</h2>
+    <button onclick="startGame()">Start game</button>
    </div>
-   <div id="neuspesno">
-    <h2>Nazalost niste presli nivo</h2>
-    <button>Play again</button>
+
+   <div id="passed">
+    <h2>Good job!</h2>
+    <h2>You passed the level <span id="lvlpass" ></span> successfully.</h2>
+    <button onclick="nextLevel()">Next level</button>
+   </div>
+   <div id="failed">
+    <h2>Sorry, you haven't passed the level <span id="lvlfail"></span>.</h2>
+    <h2>Let's try again!</h2>
+    <button onclick="playAgain()">Play again</button>
 
    </div>
+
+ <div id="game-over">
+    <h2>Congratulations,you won the game!</h2>
+    <h2>Your score is  <span id="endScore"></span></h2>
+    <button onclick="playAgain()">Play again</button>
+
+
+
+ </div>
    
 
-</div>
+
 
 
     <script src="main.js"></script>
